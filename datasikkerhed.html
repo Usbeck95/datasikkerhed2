@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="datasikkerhed.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <form action="datasikkerhed.html" method="post" id="myForm">
+        <label for="plaintext">Write some plaintext</label>
+        <input id="plaintext" type="text" value="someplainetext">
+        <label for="secret">Write a secret message</label>
+        <input id="secret" type="text" value="secret">
+        <label for="hasho">Choose a hash:</label>
+        <select id="hasho" name="hasho">
+            <option value="MD5">MD5</option>
+            <option value="SHA-1">SHA-1</option>
+            <option value="SHA-256">SHA-256</option>
+            <option value="SHA-512">SHA-512</option>
+        </select>
+        <label for="crypto">Choose a cipher:</label>
+        <select id="crypto" name="crypto">
+            <option value="AES">AES</option>
+            <option value="DES">DES</option>
+            <option value="Rabbit">Rabbit</option>
+            <option value="RC4">RC4</option>
+        </select>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+    
+    <div id="hashstring"> </div>
+    <div id="encrypstring"></div>
+    <div id="decrypstring"></div>
+
+</body>
+</html>
